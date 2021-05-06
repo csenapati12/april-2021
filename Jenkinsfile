@@ -6,7 +6,7 @@ node(){
     }
     stage("Maven build"){
         echo "Maven build"
-        bat label: '', script: 'mvn package'   
+        bat label: '', script: 'mvn package1'   
         }
     stage("sonar"){
         echo "sonar"
