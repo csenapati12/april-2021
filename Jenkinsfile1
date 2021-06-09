@@ -6,7 +6,7 @@ node(){
     sh"""
     pwd
     ls
-    ansible-playbook deploy.yml
+    ansible-playbook -i customhost deploy.yml
     """
     }
 }
