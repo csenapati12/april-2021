@@ -1,0 +1,9 @@
+node(){
+   stage("ansible execution"){
+    sh"""
+    pwd
+    ls
+    ansible-playbook deploy.yml
+    """
+    }
+}
