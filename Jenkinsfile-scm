@@ -1,7 +1,14 @@
 pipeline{
 agent any
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '3', numToKeepStr: ''))])
+
 stages{
+stage("prepare"){
+steps{
+ script{
+ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '3', numToKeepStr: ''))])
+ }
+}
+}
  stage("checkout"){
  steps{
  checkout scm
