@@ -11,7 +11,8 @@ steps{
 }
  stage("checkout"){
  steps{
- checkout scm
+// checkout scm
+echo "Hello"
  }
  }
 }
