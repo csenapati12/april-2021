@@ -14,7 +14,7 @@ echo "hello1111"
 }
  stage("checkout"){
  steps{
-// checkout scm
+checkout scm
 echo "Hello222"
  }
  }
