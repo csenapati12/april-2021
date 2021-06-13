@@ -1,15 +1,15 @@
 pipeline{
 agent any
-/** parameters {
+ parameters {
     gitParameter branchFilter: 'origin/(.*)', defaultValue: 'main', name: 'BRANCH', type: 'PT_BRANCH_TAG'
-    skipDefaultCheckout() 
-  }**/
+    
+  }
 stages{
 stage("prepare"){
 steps{
  script{
  //checkout scm
-// git branch: "${params.BRANCH}", url: 'https://github.com/csenapati12/april-2021.git'
+git branch: "${params.BRANCH}", url: 'https://github.com/csenapati12/april-2021.git'
 echo "hello1111"
  }
 }
