@@ -3,9 +3,7 @@ pipeline{
     stages{
         stage("PIP"){
             steps{
-            sh"
-              docker push csenapati12/pip-install:1.2 
-              "
+            sh "docker push csenapati12/pip-install:1.2"
             }
         }
     }
